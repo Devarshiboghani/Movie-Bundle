@@ -29,6 +29,7 @@ const LandingPage = () => {
     const fetchProducts = async () => {
       try {
         const response = await api.get('/products');
+          console.log("Products API Response:", response.data);
         setProducts(response.data);
         if (response.data.length > 0) {
           setSelectedProduct(response.data[0]); // default to first product
@@ -46,6 +47,11 @@ const LandingPage = () => {
     e.preventDefault();
     setErrorMessage('');
 
+     if (!selectedProduct) {
+    setErrorMessage("No product selected.");
+    return;
+  }
+
     if (!checkoutName || !checkoutEmail) {
       setErrorMessage('Please fill in both your Name and Email address.');
       return;
@@ -59,8 +65,9 @@ const LandingPage = () => {
     }
 
     setIsSubmitting(true);
+
     try {
-      const response = await api.post('/checkout/create-session', {
+      const response = await api.post('/payment/create-session', {
         productId: selectedProduct._id,
         customerName: checkoutName,
         customerEmail: checkoutEmail
