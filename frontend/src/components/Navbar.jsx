@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { AdminContext } from '../context/AdminContext';
-import { FiCpu, FiLogOut, FiSettings } from 'react-icons/fi';
+import { FiVideo, FiLogOut, FiSettings } from 'react-icons/fi';
 
 const Navbar = () => {
   const { admin, logout } = useContext(AdminContext);
@@ -22,8 +22,8 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark glass-navbar sticky-top py-3">
       <div className="container">
-        <Link className="navbar-brand d-flex align-items-center gap-2 fw-bold text-gradient-primary fs-4" to="/">
-          <FiCpu className="text-primary" /> BUNDLE.IO
+        <Link className="navbar-brand d-flex align-items-center gap-2 fw-bold text-gradient-red fs-4" to="/">
+          <FiVideo className="text-danger" /> MOVIE CLIPS BUNDLE
         </Link>
         <button
           className="navbar-toggler border-0"
