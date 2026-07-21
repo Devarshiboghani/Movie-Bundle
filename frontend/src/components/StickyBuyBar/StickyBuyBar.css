@@ -1,0 +1,129 @@
+.proof-cta{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background: #050d45;
+
+    /* padding: 15px 0; */
+
+    z-index: 9999;
+
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.3);
+}
+
+.replacement-badge{
+    position:absolute;
+    top:-22px;
+    left:50%;
+    transform:translateX(-50%);
+
+    background:#213a9b;
+    color:#fff;
+
+    border:3px solid #fff;
+    /* outline:2px solid #d63d3d; */
+
+    padding:4px 18px;
+
+    font-size:18px;
+    font-weight:800;
+
+    border-radius:3px;
+
+    white-space:nowrap;
+
+    z-index:100;
+}
+
+.proof-flex {
+  width: 72%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.proof-left {
+  color: #fff;
+}
+
+.proof-left p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.proof-left span{
+    color:#ff1e1e;
+    font-size:22px;
+    /* margin-right:10px; */
+}
+
+.proof-btn {
+  background: linear-gradient(to right, #ff9800, #ff2d00);
+  color: #fff;
+
+  border: none;
+  outline: none;
+
+  width: 300px;
+  height: 55px;
+
+  border-radius: 4px;
+
+  font-size: 22px;
+  font-weight: 800;
+
+  cursor: pointer;
+  transition: .3s;
+}
+
+.proof-btn:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width:992px){
+
+.proof-flex{
+    width:95%;
+    flex-direction:column;
+    text-align:center;
+    gap:25px;
+}
+
+.proof-left p{
+    justify-content:center;
+}
+
+.proof-btn{
+    width:100%;
+    max-width:320px;
+    height:56px;
+    font-size:22px;
+}
+
+}
+
+@media (max-width:576px){
+
+.proof-cta{
+    padding:20px 15px;
+}
+
+.proof-left p{
+    font-size:15px;
+}
+
+.proof-btn{
+    height:52px;
+    font-size:18px;
+}
+
+}

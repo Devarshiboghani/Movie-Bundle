@@ -1,0 +1,178 @@
+.customer-review-section{
+    background:#fff;
+    padding:50px 20px;
+    text-align:center;
+}
+
+.review-heading{
+    font-size:52px;
+    font-weight:800;
+    color:#111;
+    margin-bottom:20px;
+}
+
+.review-grid{
+    display:grid;
+    grid-template-columns:repeat(2,320px);
+    justify-content:center;
+    gap:22px;
+    max-width: 620px;
+    margin: auto;
+}
+
+.review-card{
+    background:#fff;
+    padding:4px;
+    border-radius:8px;
+    box-shadow:
+        0 4px 8px rgba(0, 0, 0, 0.35),
+        0 12px 25px rgba(0, 0, 0, 0.45);
+    transition: all 0.3s ease;
+}
+
+.review-card:hover{
+    transform: translateY(-5px);
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.25),
+        0 18px 40px rgba(0,0,0,.30);
+        transition: 0.3s all;
+}
+
+.review-card img{
+    width:100%;
+    display:block;
+}
+
+.buy-btn{
+    margin-top:35px;
+    background:linear-gradient(90deg,#e09b1d,#ff2400);
+    color:#fff;
+    border:none;
+    padding:12px 22px;
+    font-size:18px;
+    font-weight:700;
+    border-radius:4px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.buy-btn:hover{
+    transform:translateY(-2px);
+}
+
+.review-benefits{
+    margin-top:22px;
+}
+
+.review-benefits p{
+    font-size:18px;
+    font-weight:700;
+    margin:8px 0;
+    color:#000;
+    line-height:1.4;
+}
+
+.review-benefits p::before{
+    content:"✔";
+    color:#1d4fff;
+    margin-right:10px;
+    font-weight:900;
+}
+
+.timer{
+    display:flex;
+    justify-content:center;
+    gap:45px;
+    margin-top:35px;
+}
+
+.timer h3{
+    margin:0;
+    font-size:42px;
+    font-weight:800;
+    line-height:1;
+    color:#000;
+}
+
+.timer span{
+    display:block;
+    margin-top:4px;
+    color:#ff0000;
+    font-size:16px;
+    font-weight:700;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+.review-grid{
+    grid-template-columns:repeat(2,280px);
+}
+
+.review-heading{
+    font-size:42px;
+}
+
+.buy-btn{
+    font-size:22px;
+}
+
+.review-benefits p{
+    font-size:20px;
+}
+
+.timer{
+    gap:35px;
+}
+
+.timer h3{
+    font-size:42px;
+}
+
+.timer span{
+    font-size:20px;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.review-grid{
+    grid-template-columns:1fr;
+}
+
+.review-card{
+    max-width:340px;
+    margin:auto;
+}
+
+.review-heading{
+    font-size:32px;
+}
+
+.buy-btn{
+    width:auto;
+    padding:12px 18px;
+    font-size:16px;
+}
+
+.review-benefits p{
+    font-size:16px;
+}
+
+.timer{
+    gap:25px;
+}
+
+.timer h3{
+    font-size:34px;
+}
+
+.timer span{
+    font-size:14px;
+}
+
+}

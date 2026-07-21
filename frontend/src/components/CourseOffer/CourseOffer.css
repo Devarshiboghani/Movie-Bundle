@@ -1,0 +1,146 @@
+.offer-section {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+/* Wave Header Styling */
+.wave-header {
+  width: 100%;
+  line-height: 0;
+}
+.wave-header svg {
+  width: 100%;
+  height: auto;
+}
+
+/* Text Header Styling */
+.offer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.limited-offer {
+  /* font-size: 1.9rem; */
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.001cm;
+  /* letter-spacing: 0.5px; */
+  margin-bottom: 8px;
+}
+
+.unlock-bonus {
+  color: #ff3333;
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-heading {
+  color: #ffeb3b;
+  font-size: 3.3rem;
+  letter-spacing: 0.03cm;
+  font-weight: 800;
+  margin-bottom: 60px;
+  text-shadow: 0px 4px 10px rgba(255, 235, 59, 0.2);
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* gap: 50px; */
+  /* margin-top: 20px; */
+}
+
+.offer-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  gap: 40px;
+  padding: 20px 40px;
+}
+
+.offer-card:nth-child(even) {
+  flex-direction: row; 
+}
+
+.card-text {
+  flex: 1;
+  /* display: flex; */
+  /* justify-items: flex-start; */
+}
+
+.card-text h2 {
+  font-size: 1.7rem;
+  letter-spacing: 0.02cm;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffffff;
+  max-width: 400px;
+}
+
+.card-text h5 {
+  font-size: 1.32rem;
+  letter-spacing: 0.01cm;
+  line-height: 1.9rem;
+  font-weight: 300;
+  max-width: 450px;
+}
+
+.card-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.card-image img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0px 15px 30px rgba(255, 255, 255, 0.05));
+  transition: transform 0.3s ease;
+}
+
+.offer-card:hover .card-image img {
+  transform: translateY(-8px) scale(1.02);
+}
+
+/* Responsive Handling */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .limited-offer {
+    font-size: 1rem;
+  }
+
+  .unlock-bonus {
+    font-size: 1.2rem;
+  }
+
+  .offer-card, .offer-card:nth-child(even) {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 25px;
+    padding: 20px 10px;
+  }
+
+  .card-text p {
+    margin: 0 auto;
+  }
+
+  .card-image img {
+    max-width: 220px;
+  }
+}
