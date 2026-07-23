@@ -1,14 +1,16 @@
 .demo-videos-section {
   background: #ffffff;
-  padding: 80px 0;
+  padding: 80px 0 40px 0;
 }
 
 .demo-title {
   text-align: center;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 800;
+  letter-spacing: 0.02cm;
+  line-height: 1.5rem;
   color: #111;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
 
 .video-wrapper {
@@ -19,16 +21,23 @@
 
 .video-card {
   margin-bottom: 28px;
-
   background: #fff;
-
+  padding: 4px;
   border: 3px solid #d7d7d7;
-
   border-radius: 8px;
-
   overflow: hidden;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.35),
+    0 12px 25px rgba(0, 0, 0, 0.45);
+  transition: all 0.3s ease;
+}
 
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.25),
+    0 18px 40px rgba(0, 0, 0, 0.3);
+  transition: 0.3s all;
 }
 
 .demo-video {

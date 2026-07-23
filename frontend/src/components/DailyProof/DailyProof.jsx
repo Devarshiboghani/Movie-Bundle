@@ -15,9 +15,9 @@ const DailyProof = () => {
 
       <div className="container">
 
-        <h1 className="proof-heading">
+        <h2 className="proof-heading">
           GET <span>MOVIE CLIPS</span> DAILY PROOF
-        </h1>
+        </h2>
 
 <div className='proof-single-image'>
           <img

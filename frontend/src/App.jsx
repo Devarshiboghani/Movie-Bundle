@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 // import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Hero from "./components/Hero/Hero";
 import BundleSection from "./components/BundleSection/BundleSection";
 import DemoVideos from "./components/DemoVideos/DemoVideos";
