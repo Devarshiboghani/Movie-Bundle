@@ -7,12 +7,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import "./index.css";
 
-import { AdminProvider } from "./context/AdminContext";
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <AdminProvider>
       <App />
-    </AdminProvider>
   </React.StrictMode>
 );

@@ -1,9 +1,12 @@
 import "./StickyBuyBar.css";
+import { useNavigate } from "react-router-dom";
 
 const StickyBuyBar = () => {
+  
+  const navigate = useNavigate();
+
     return (
         <>
-
       <div className="proof-cta">
 
         {/* Top Badge */}
@@ -18,7 +21,7 @@ const StickyBuyBar = () => {
             <p><span>✔</span> Pre Made Titles & Hashtags</p>
           </div>
 
-          <button className="proof-btn">Buy Now At Just ₹149/-</button>
+          <button className="proof-btn" onClick={() => navigate("/checkout")}>Buy Now At Just ₹149/-</button>
         </div>
         </div>
         </>
