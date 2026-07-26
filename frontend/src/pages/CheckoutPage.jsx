@@ -8,19 +8,12 @@ import CheckoutHero from "../components/Checkout/CheckoutHero";
 const CheckoutPage = () => {
   return (
     <>
-
       <CheckoutHero />
-
-      {/* <Description /> */}
-
-      {/* <Testimonial /> */}
-
-      {/* <CheckoutFaq /> */}
-
-      {/* <Contact /> */}
-
-      {/* <Footer /> */}
-
+      {/* <Description />
+      <Testimonial />
+      <CheckoutFaq />
+      <Contact />
+      <Footer /> */}
     </>
   );
 };
