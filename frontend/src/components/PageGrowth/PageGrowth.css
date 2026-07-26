@@ -35,21 +35,40 @@
 .growth-images {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 25px;
+  flex-wrap: nowrap;
 }
 
 .growth-images img {
-  width: 400px;
-  height: 400px;
+  width: calc((100% - 50px) / 3);
+  max-width: 360px;
+  height: auto;
+  display: block;
+  border-radius: 12px;
 }
 
 @media (max-width: 1200px) {
+  .growth-main-title {
+    font-size: 36px;
+  }
+
+  .growth-images {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
   .growth-images img {
-    width: 170px;
+    width: calc((100% - 20px) / 2);
+    max-width: 320px;
   }
 }
 
 @media (max-width: 992px) {
+  .growth-main-title {
+    font-size: 32px;
+  }
+
   .growth-row {
     flex-direction: column;
   }
@@ -60,6 +79,31 @@
 
   .growth-main-title {
     font-size: 38px;
+  }
+
+  .growth-images {
+    gap: 20px;
+  }
+
+  .growth-images img {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .growth-main-title {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .growth-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .growth-images img {
+    width: 100%;
+    max-width: 420px;
   }
 }
 
@@ -79,5 +123,17 @@
 
   .growth-main-title {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .growth-main-title {
+    font-size: 24px;
+  }
+
+  .growth-images img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
   }
 }

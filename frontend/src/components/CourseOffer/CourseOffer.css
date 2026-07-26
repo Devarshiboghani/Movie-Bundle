@@ -1,11 +1,9 @@
 .offer-section {
-  background-color: #000000;
-  color: #ffffff;
-  font-family: "Poppins", "Arial", sans-serif;
-  min-height: 100vh;
-  position: relative;
-  padding-bottom: 80px;
+  background: #000;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
   overflow: hidden;
+  padding-bottom: 80px;
 }
 
 .wave-header {
@@ -15,111 +13,172 @@
 
 .wave-header svg {
   width: 100%;
-  height: auto;
+  display: block;
 }
 
 .offer-content {
-  max-width: 1100px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
   padding: 0 20px;
   text-align: center;
 }
 
 .limited-offer {
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 800;
-  line-height: 0.5cm;
-  letter-spacing: 0.001cm;
   margin-bottom: 18px;
+  line-height: 1.4;
 }
 
 .unlock-bonus {
-  color: #ff3333;
-  font-size: 1.9rem;
-  font-weight: bold;
-  margin-bottom: 10px;
+  color: #ff3b3b;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 
 .main-heading {
-  color: #ffeb3b;
-  font-size: 3.3rem;
-  letter-spacing: 0.09cm;
-  font-weight: bolder;
-  margin-bottom: 20px;
-  text-shadow: 0px 4px 10px rgba(255, 235, 59, 0.2);
+  color: #ffe600;
+  font-size: 54px;
+  font-weight: 900;
+  margin-bottom: 60px;
 }
 
 .cards-container {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 60px;
 }
 
 .offer-card {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  text-align: left;
-  gap: 40px;
-  padding: 20px 40px;
+  justify-content: center;
+  gap: 10px;
 }
 
 .offer-card:nth-child(even) {
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 
 .card-text {
-  flex: 1;
+  flex: 0 0 420px;
+  max-width: 420px;
+  text-align: left;
 }
 
 .card-text h2 {
-  font-size: 1.7rem;
-  letter-spacing: 0.02cm;
+  font-size: 34px;
   font-weight: 700;
-  margin-bottom: 15px;
-  color: #ffffff;
-  max-width: 400px;
+  margin-bottom: 18px;
+  line-height: 1.4;
 }
 
 .card-text h5 {
-  font-size: 1.32rem;
-  letter-spacing: 0.01cm;
-  line-height: 1.9rem;
-  font-weight: 300;
-  max-width: 450px;
+  font-size: 20px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #ddd;
 }
 
 .card-image {
-  flex: 1;
+  flex: 0 0 420px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .card-image img {
   width: 100%;
-  max-width: 800px;
+  max-width: 360px;
   height: auto;
-  object-fit: contain;
-  filter: drop-shadow(0px 15px 30px rgba(255, 255, 255, 0.05));
-  transition: transform 0.3s ease;
+  transition: 0.3s;
 }
 
-.offer-card:hover .card-image img {
-  transform: translateY(-8px) scale(1.02);
+.offer-card:hover img {
+  transform: scale(1.04);
 }
 
-@media (max-width: 768px) {
-  .main-heading {
-    font-size: 2rem;
-    margin-bottom: 40px;
+@media (max-width: 1400px) {
+  .offer-content {
+    max-width: 1100px;
   }
 
   .limited-offer {
-    font-size: 1rem;
+    font-size: 30px;
   }
 
   .unlock-bonus {
-    font-size: 1.2rem;
+    font-size: 28px;
+  }
+
+  .main-heading {
+    font-size: 48px;
+  }
+
+  .card-text {
+    flex: 0 0 400px;
+  }
+
+  .card-image {
+    flex: 0 0 400px;
+  }
+
+  .card-image img {
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .offer-content {
+    max-width: 1000px;
+  }
+
+  .cards-container {
+    gap: 50px;
+  }
+
+  .offer-card {
+    gap: 40px;
+  }
+
+  .limited-offer {
+    font-size: 28px;
+  }
+
+  .unlock-bonus {
+    font-size: 26px;
+  }
+
+  .main-heading {
+    font-size: 44px;
+  }
+
+  .card-text {
+    flex: 0 0 360px;
+  }
+
+  .card-image {
+    flex: 0 0 360px;
+  }
+
+  .card-text h2 {
+    font-size: 30px;
+  }
+
+  .card-text h5 {
+    font-size: 18px;
+  }
+
+  .card-image img {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 992px) {
+  .offer-content {
+    max-width: 750px;
   }
 
   .offer-card,
@@ -127,14 +186,151 @@
     flex-direction: column-reverse;
     text-align: center;
     gap: 25px;
-    padding: 20px 10px;
   }
 
-  .card-text p {
-    margin: 0 auto;
+  .card-text,
+  .card-image {
+    flex: unset;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card-text {
+    text-align: center;
+  }
+
+  .card-text h2 {
+    max-width: 100%;
+    font-size: 28px;
+  }
+
+  .card-text h5 {
+    max-width: 100%;
+    font-size: 18px;
+  }
+
+  .card-image img {
+    max-width: 300px;
+  }
+
+  .limited-offer {
+    font-size: 24px;
+  }
+
+  .unlock-bonus {
+    font-size: 24px;
+  }
+
+  .main-heading {
+    font-size: 40px;
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-section {
+    padding-bottom: 60px;
+  }
+
+  .offer-content {
+    padding: 0 18px;
+  }
+
+  .cards-container {
+    gap: 45px;
+  }
+
+  .limited-offer {
+    font-size: 21px;
+  }
+
+  .unlock-bonus {
+    font-size: 20px;
+  }
+
+  .main-heading {
+    font-size: 34px;
+    margin-bottom: 35px;
+  }
+
+  .card-text h2 {
+    font-size: 24px;
+  }
+
+  .card-text h5 {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .card-image img {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 576px) {
+  .offer-content {
+    padding: 0 15px;
+  }
+
+  .limited-offer {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .unlock-bonus {
+    font-size: 18px;
+  }
+
+  .main-heading {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .cards-container {
+    gap: 35px;
+  }
+
+  .offer-card {
+    gap: 18px;
+  }
+
+  .card-text h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .card-text h5 {
+    font-size: 15px;
+    line-height: 1.7;
   }
 
   .card-image img {
     max-width: 220px;
+  }
+}
+
+@media (max-width: 400px) {
+  .limited-offer {
+    font-size: 16px;
+  }
+
+  .unlock-bonus {
+    font-size: 16px;
+  }
+
+  .main-heading {
+    font-size: 24px;
+  }
+
+  .card-text h2 {
+    font-size: 20px;
+  }
+
+  .card-text h5 {
+    font-size: 14px;
+  }
+
+  .card-image img {
+    max-width: 180px;
   }
 }

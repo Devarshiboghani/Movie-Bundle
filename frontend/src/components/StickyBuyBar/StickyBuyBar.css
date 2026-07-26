@@ -6,59 +6,63 @@
   background: #050d45;
   z-index: 9999;
   box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+  padding: 14px 0;
 }
 
 .replacement-badge {
   position: absolute;
-  top: -22px;
+  top: -18px;
   left: 50%;
   transform: translateX(-50%);
   background: #213a9b;
   color: #fff;
   border: 3px solid #fff;
-  padding: 4px 18px;
-  font-size: 18px;
-  font-weight: 800;
-  border-radius: 3px;
+  padding: 5px 18px;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 4px;
   white-space: nowrap;
-  z-index: 100;
 }
 
 .proof-flex {
-  width: 72%;
+  width: min(95%, 1200px);
   margin: auto;
+
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
+  gap: 25px;
 }
 
 .proof-left {
-  color: #fff;
+  flex: 1;
 }
 
 .proof-left p {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 700;
+  margin: 6px 0;
   display: flex;
   align-items: center;
   gap: 10px;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .proof-left span {
-  color: #ff1e1e;
-  font-size: 22px;
+  color: #ff2d2d;
+  font-size: 20px;
 }
 
 .proof-btn {
+  flex-shrink: 0;
+  width: 320px;
+  height: 56px;
   background: linear-gradient(to right, #ff9800, #ff2d00);
-  color: #fff;
   border: none;
-  outline: none;
-  width: 300px;
-  height: 55px;
-  border-radius: 4px;
-  font-size: 22px;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 20px;
   font-weight: 800;
   cursor: pointer;
   transition: 0.3s;
@@ -71,34 +75,77 @@
 @media (max-width: 992px) {
   .proof-flex {
     width: 95%;
-    flex-direction: column;
-    text-align: center;
-    gap: 25px;
+    gap: 18px;
   }
 
   .proof-left p {
-    justify-content: center;
+    font-size: 14px;
+  }
+
+  .proof-left span {
+    font-size: 18px;
   }
 
   .proof-btn {
-    width: 100%;
-    max-width: 320px;
-    height: 56px;
-    font-size: 22px;
+    width: 260px;
+    height: 52px;
+    font-size: 17px;
+  }
+
+  .replacement-badge {
+    font-size: 15px;
   }
 }
 
-@media (max-width: 576px) {
-  .proof-cta {
-    padding: 20px 15px;
+@media (max-width: 768px) {
+  .proof-flex {
+    gap: 12px;
   }
 
   .proof-left p {
-    font-size: 15px;
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .proof-left span {
+    font-size: 16px;
   }
 
   .proof-btn {
-    height: 52px;
-    font-size: 18px;
+    width: 180px;
+    height: 46px;
+    font-size: 14px;
+  }
+
+  .replacement-badge {
+    font-size: 13px;
+    padding: 4px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .proof-cta {
+    padding: 12px 0;
+  }
+
+  .proof-flex {
+    width: 96%;
+    gap: 10px;
+  }
+
+  .proof-left p {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .proof-btn {
+    width: 150px;
+    height: 42px;
+    font-size: 12px;
+  }
+
+  .replacement-badge {
+    font-size: 11px;
+    padding: 4px 10px;
   }
 }
