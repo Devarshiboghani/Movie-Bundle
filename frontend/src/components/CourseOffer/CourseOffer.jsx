@@ -29,7 +29,6 @@ const CourseOffer = () => {
 
   return (
     <div className="offer-section">
-      {/* Top Wave Background Effect */}
       <div className="wave-header">
         <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z" fill="#ffffff"></path>
@@ -38,12 +37,10 @@ const CourseOffer = () => {
       </div>
 
       <div className="offer-content">
-        {/* Header Text */}
         <p className="limited-offer">⏳ Limited Period Offer - Next Price Will be 499/- ⏳</p>
         <p className="unlock-bonus">Unlock Bonuses Worth ₹4,999/-</p>
         <h1 className="main-heading">If You Enroll Today!</h1>
 
-        {/* Dynamic Cards Grid */}
         <div className="cards-container">
           {offerData.map((item, index) => (
             <div className="offer-card" key={index}>

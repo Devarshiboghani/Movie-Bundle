@@ -1,5 +1,5 @@
-import "./StickyBuyBar.css";
 import { useNavigate } from "react-router-dom";
+import "./StickyBuyBar.css";
 
 const StickyBuyBar = () => {
   
@@ -9,7 +9,6 @@ const StickyBuyBar = () => {
         <>
       <div className="proof-cta">
 
-        {/* Top Badge */}
         <div className="replacement-badge">
           100% Clips Replacement (FREE)
         </div>

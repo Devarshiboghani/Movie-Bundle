@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import "./BundleSection.css";
 import bundle from "../../assets/movie.png";
 import { FaCheckCircle } from "react-icons/fa";
@@ -17,6 +18,8 @@ const features = [
 ];
 
 const BundleSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="bundle-section">
       <div className="container">
@@ -28,10 +31,6 @@ const BundleSection = () => {
           <div className="col-lg-7">
             <h2 className="bundle-title">Everything Included In Your Bundle</h2>
 
-            {/* <p className="bundle-subtitle">
-              Premium ready-to-use movie collection with lifetime updates.
-            </p> */}
-
             <div className="feature-list">
               {features.map((item, index) => (
                 <div className="feature-item" key={index}>
@@ -41,52 +40,36 @@ const BundleSection = () => {
               ))}
             </div>
           </div>
-            </div>
+        </div>
       </div>
 
-          {/* <div className="bundle-bottom"> */}
-          <button className="buy-btn1">Buy Now At Just ₹149/-</button>
+      <button className="buy-btn1" onClick={() => navigate("/checkout")}>
+        Buy Now At Just ₹149/-
+      </button>
 
-          <div className="extra-benefits">
-            <p>100% Copyright Free</p>
-            <p>Direct Upload Without Editing</p>
-            <p>100% Replacement Of Clips</p>
-            <p>Free Bonuses Of ₹5,000</p>
-          </div>
+      <div className="extra-benefits">
+        <p>100% Copyright Free</p>
+        <p>Direct Upload Without Editing</p>
+        <p>100% Replacement Of Clips</p>
+        <p>Free Bonuses Of ₹5,000</p>
+      </div>
 
-          <div className="timer1">
-            <div>
-              <h3>00</h3>
-              <span>Hours</span>
-            </div>
+      <div className="timer1">
+        <div>
+          <h3>00</h3>
+          <span>Hours</span>
+        </div>
 
-            <div>
-              <h3>00</h3>
-              <span>Minutes</span>
-            </div>
+        <div>
+          <h3>00</h3>
+          <span>Minutes</span>
+        </div>
 
-            <div>
-              <h3>00</h3>
-              <span>Seconds</span>
-            </div>
-          </div>
-
-          {/* <div>
-                  <span>✔</span>100% Copyright Free
-                </div>
-                <div>
-                  <span>✔</span>Direct Upload Without Editing
-                </div>
-                <div>
-                  <span>✔</span>100% Replacement Of Clips
-                </div>
-                <div>
-                  <span>✔</span>Free Bonuses Of ₹5,000
-                </div> */}
-        {/* </div>
-      </div> */}
-      {/* </div> */}
-      {/* </div> */}
+        <div>
+          <h3>00</h3>
+          <span>Seconds</span>
+        </div>
+      </div>
     </section>
   );
 };

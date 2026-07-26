@@ -7,33 +7,22 @@ import member4 from "../../assets/member4.png";
 import member5 from "../../assets/member5.png";
 import member6 from "../../assets/member6.png";
 
-const images = [
-  member1,
-  member2,
-  member3,
-  member4,
-  member5,
-  member6,
-];
+const images = [member1, member2, member3, member4, member5, member6];
 
 const MembersGrowth = () => {
   return (
     <section className="members-growth">
-
       <div className="container">
-
         <h2 className="members-title">
           CHECK HOW <span>MOVIE CLIPS BUNDLE</span> HAS GROWN OUR MEMBERS PAGE
         </h2>
 
         <div className="members-grid">
-
           {images.map((img, index) => (
             <div className="member-card" key={index}>
               <img src={img} alt="" />
             </div>
           ))}
-
         </div>
 
         <h3 className="members-bottom-text">
@@ -44,9 +33,7 @@ const MembersGrowth = () => {
         <button className="members-btn">
           Who Is This <span>Movie Clips</span> For?
         </button>
-
       </div>
-
     </section>
   );
 };

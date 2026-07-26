@@ -16,8 +16,8 @@ const CheckoutHero = () => {
     <section className="checkout-section">
       <div className="container-fluid checkout-container">
         <div className="row align-items-center g-0">
-          {/* LEFT SIDE */}
 
+          {/* LEFT SIDE */}
           <div className="col-lg-7 col-xl-7 d-flex justify-content-end">
             <div className="left-section">
               <img src={logo} alt="Logo" className="checkout-logo" />
@@ -33,7 +33,6 @@ const CheckoutHero = () => {
           </div>
 
           {/* RIGHT SIDE */}
-
           <div className="col-lg-5 col-xl-5 d-flex justify-content-start">
             <div className="checkout-card">
               <p className="email-text">
@@ -64,14 +63,10 @@ const CheckoutHero = () => {
                 />
               </div>
 
-              {/* Addon */}
               <div className="blue">
                 <div className="addon-box">
                   <img src={bundleImage2} alt="" className="addon-img" />
-
-                  {/* <div> */}
                   <h4>1000+ Facebook Auto Approval Groups</h4>
-                  {/* </div> */}
                 </div>
                 <p>1000+ Public Auto Approval Groups</p>
 
@@ -97,7 +92,6 @@ const CheckoutHero = () => {
               </div>
 
               <div className="price-box">
-                {/* Sub Total */}
                 <div className="price-row">
                   <span className="label">Sub Total</span>
 
@@ -107,7 +101,6 @@ const CheckoutHero = () => {
                   </div>
                 </div>
 
-                {/* Add On Row */}
                 {addOn && (
                   <div className="price-row">
                     <span>Add On</span>
@@ -115,7 +108,6 @@ const CheckoutHero = () => {
                   </div>
                 )}
 
-                {/* Total */}
                 <div className="price-row total-row">
                   <span className="label">Total</span>
                   <span className="price">₹{total}</span>

@@ -1,0 +1,63 @@
+.checkoutfaq-section {
+  background: #0d0d0d;
+  color: #fff;
+  padding: 10px 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.checkoutfaq-container {
+  width: 100%;
+  max-width: 760px;
+}
+
+.checkoutfaq-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.checkoutfaq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  font-family: Hind Madurai, sans-serif;
+}
+
+.checkoutfaq-card {
+  border: 1px solid hsla(0, 0%, 100%, 0.15);
+  box-shadow: 0 0 6px 0 hsla(0, 0%, 100%, 0.35);
+  border-radius: 12px;
+  padding: 18px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkoutfaq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.checkoutfaq-icon {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.checkoutfaq-answer {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #777777;
+  font-size: 14px;
+  line-height: 1.5;
+}

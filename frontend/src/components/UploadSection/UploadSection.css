@@ -38,12 +38,10 @@
   object-fit: contain;
 }
 
-/* Hover Effect jo is layout ko interactive banayega */
 .icon-card:hover {
   transform: scale(1.08);
 }
 
-/* Responsive adjustment for smaller screens */
 @media (max-width: 600px) {
   .upload-title {
     font-size: 22px;

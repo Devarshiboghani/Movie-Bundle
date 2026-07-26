@@ -1,7 +1,6 @@
 import React from 'react';
 import './UploadSection.css';
 
-// Apni offline images ko sahi relative path se import karein
 import instagramImg from '../../assets/instagram.png'; 
 import youtubeImg from '../../assets/youtube.png';
 import facebookImg from '../../assets/facebook.png';

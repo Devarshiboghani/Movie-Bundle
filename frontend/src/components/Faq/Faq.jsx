@@ -50,16 +50,11 @@ const Faq = () => {
         <div className="faq-wrapper">
           {faqData.map((item, index) => (
             <div className="faq-item" key={index}>
-              <button
-                className="faq-question"
-                onClick={() => toggle(index)}
-              >
+              <button className="faq-question" onClick={() => toggle(index)}>
                 {item.question}
 
                 <span
-                  className={
-                    active.includes(index) ? "arrow rotate" : "arrow"
-                  }
+                  className={active.includes(index) ? "arrow rotate" : "arrow"}
                 >
                   ▶
                 </span>
@@ -67,9 +62,7 @@ const Faq = () => {
 
               <div
                 className={
-                  active.includes(index)
-                    ? "faq-answer active"
-                    : "faq-answer"
+                  active.includes(index) ? "faq-answer active" : "faq-answer"
                 }
               >
                 <p>{item.answer}</p>

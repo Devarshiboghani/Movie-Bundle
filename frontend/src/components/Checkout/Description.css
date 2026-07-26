@@ -1,172 +1,149 @@
 .description-section {
-  width: 100%;
-  padding: 40px 0 70px;
-  background: #ffffff;
+  background: #0d0d0d;
+  color: #fff;
+  padding: 10px 0;
 }
 
 .description-container {
-  max-width: 1150px;
+  width: 100%;
+  max-width: 760px;
   margin: auto;
-  padding: 0 20px;
 }
 
-.description-title {
-  font-size: 34px;
-  font-weight: 700;
-  color: #111;
-  margin-bottom: 25px;
-}
-
-.description-text {
-  font-size: 18px;
-  color: #444;
-  line-height: 1.8;
+.section-title {
+  font-size: 16px;
   margin-bottom: 18px;
+  color: #fff;
 }
 
-.description-text strong {
-  color: #000;
-  font-weight: 700;
+.offer-banner {
+  width: 100%;
+  max-width: 430px;
+  display: block;
+  margin: 0 0px 35px;
+  border-radius: 12px;
 }
 
-.description-list {
-  margin: 30px 0;
-  padding-left: 25px;
-}
-
-.description-list li {
+.offer-banner h5 {
   font-size: 18px;
-  color: #444;
-  margin-bottom: 14px;
-  line-height: 1.7;
-}
-
-.highlight-box {
-  background: #fff7e6;
-  border-left: 5px solid #ff9800;
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 30px;
-}
-
-.highlight-box h4 {
-  margin: 0 0 12px;
-  font-size: 22px;
-  color: #111;
+  line-height: 1.35;
   font-weight: 700;
+  margin-bottom: 6px;
 }
 
-.highlight-box p {
-  margin: 0;
-  font-size: 17px;
-  color: #444;
-  line-height: 1.8;
+.offer-banner span {
+  color: #ffe600;
+}
+.offer-banner p {
+  font-size: 14px;
+  font-weight: 600;
 }
 
-.info-box {
-  margin-top: 35px;
-  padding: 20px;
-  background: #f6f8fb;
-  border-radius: 10px;
+.replacement-banner {
+  font-size: 14px;
+  padding: 8px 22px;
+  margin-bottom: 28px;
 }
 
-.info-box h4 {
-  margin-bottom: 15px;
-  color: #111;
-  font-size: 22px;
+.description-card {
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.description-card h3 {
+  font-size: 16px;
   font-weight: 700;
+  margin: 22px 0 12px;
+  color: #fff;
 }
 
-.info-box ul {
-  padding-left: 22px;
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
 }
 
-.info-box li {
-  margin-bottom: 12px;
-  color: #444;
-  line-height: 1.7;
+.feature-list li {
+  font-size: 15px;
+}
+
+.content-block {
+  background: #171717;
+  border-radius: 15px;
+  padding: 18px;
+  margin-top: 25px;
+  border: 1px solid #2f2f2f;
+}
+
+.content-block p {
+  color: #fff;
   font-size: 17px;
+  font-weight: 600;
 }
 
-.note-box {
-  margin-top: 35px;
-  background: #e8f5ff;
-  border-left: 5px solid #0d6efd;
-  padding: 20px;
-  border-radius: 8px;
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
 }
 
-.note-box h4 {
-  margin-bottom: 12px;
-  color: #0d6efd;
-  font-size: 22px;
+.info-table tr {
+  border-bottom: 1px solid #333;
 }
 
-.note-box p {
-  margin: 0;
-  color: #444;
-  line-height: 1.8;
-  font-size: 17px;
+.info-table td {
+  padding: 12px;
+  color: #fff;
+  font-size: 15px;
 }
 
-/* Tablet */
-
-@media (max-width: 992px) {
-  .description-title {
-    font-size: 30px;
-  }
-
-  .description-text,
-  .description-list li,
-  .highlight-box p,
-  .info-box li,
-  .note-box p {
-    font-size: 16px;
-  }
-
-  .highlight-box h4,
-  .info-box h4,
-  .note-box h4 {
-    font-size: 20px;
-  }
+.info-table td:last-child {
+  text-align: right;
 }
 
-/* Mobile */
-
-@media (max-width: 576px) {
-  .description-section {
-    padding: 30px 0 50px;
+@media (max-width: 768px) {
+  .offer-banner {
+    padding: 22px;
   }
 
-  .description-container {
-    padding: 0 15px;
+  .offer-banner h2 {
+    font-size: 24px;
   }
 
-  .description-title {
-    font-size: 26px;
-  }
-
-  .description-text,
-  .description-list li {
-    font-size: 15px;
-    line-height: 1.7;
-  }
-
-  .highlight-box,
-  .info-box,
-  .note-box {
-    padding: 16px;
-  }
-
-  .highlight-box h4,
-  .info-box h4,
-  .note-box h4 {
+  .offer-banner p {
     font-size: 18px;
   }
 
-  .highlight-box p,
-  .info-box li,
-  .note-box p {
+  .replacement-banner {
     font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  .description-card {
+    padding: 22px;
+  }
+
+  .description-card h3 {
+    font-size: 22px;
+  }
+
+  .description-card li {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .content-block {
+    padding: 20px;
+  }
+
+  .content-block h3 {
+    font-size: 20px;
+  }
+
+  .info-table td {
+    font-size: 14px;
+    padding: 12px;
   }
 }

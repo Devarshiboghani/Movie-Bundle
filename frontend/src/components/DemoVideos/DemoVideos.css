@@ -42,11 +42,8 @@
 
 .demo-video {
   width: 100%;
-
   display: block;
-
   aspect-ratio: 16/9;
-
   background: #000;
 }
 

@@ -37,10 +37,6 @@ const MonetizationProof = () => {
 
         <ul className="proof-list">
           <li>✔ Full Monetization Support</li>
-{/* 
-          <li>✔ Copyright Free Movie Clips</li>
-          <li>✔ Viral Ready Content</li>
-          <li>✔ Instant Download</li> */}
         </ul>
       </div>
     </section>

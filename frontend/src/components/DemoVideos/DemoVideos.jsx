@@ -10,33 +10,19 @@ const videos = [
 const DemoVideos = () => {
   return (
     <section className="demo-videos-section">
-
       <div className="container">
-
-        <h2 className="demo-title">
-          DEMO CLIPS VIDEOS🔥
-        </h2>
+        <h2 className="demo-title">DEMO CLIPS VIDEOS🔥</h2>
 
         <div className="video-wrapper">
-
           {videos.map((video, index) => (
             <div className="video-card" key={index}>
-
-              <video
-                controls
-                preload="metadata"
-                className="demo-video"
-              >
+              <video controls preload="metadata" className="demo-video">
                 <source src={video} type="video/mp4" />
               </video>
-
             </div>
           ))}
-
         </div>
-
       </div>
-
     </section>
   );
 };

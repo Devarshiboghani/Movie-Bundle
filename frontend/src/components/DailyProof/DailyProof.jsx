@@ -4,7 +4,6 @@ import dailyproofImage from "../../assets/dailyproof.png";
 const DailyProof = () => {
   return (
     <section className="daily-proof">
-
       <div className="proof-top-bar">
         <h2>
           2025 की सारी Latest Movie Clips जैसे की
@@ -14,19 +13,14 @@ const DailyProof = () => {
       </div>
 
       <div className="container">
-
         <h2 className="proof-heading">
           GET <span>MOVIE CLIPS</span> DAILY PROOF
         </h2>
 
-<div className='proof-single-image'>
-          <img
-            src={dailyproofImage}
-            alt='Daily Movie Clips Proof'
-          />
+        <div className="proof-single-image">
+          <img src={dailyproofImage} alt="Daily Movie Clips Proof" />
         </div>
       </div>
-
     </section>
   );
 };

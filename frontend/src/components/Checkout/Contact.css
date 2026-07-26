@@ -1,0 +1,104 @@
+.contact-section {
+  background-color: #0d0d0d;
+  padding: 10px 0px;
+  color: #ffffff;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.contact-icon {
+  font-size: 16px;
+}
+
+.terms-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.terms-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.terms-toggle-icon,
+.terms-title {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.terms-text {
+  font-size: 13px;
+  color: #aaaaaa;
+}
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #222222;
+  margin: 0px 0;
+}
+
+.superprofile-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.superprofile-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.superprofile-logo {
+  color: #0066ff;
+  font-size: 18px;
+}
+
+.superprofile-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.superprofile-text {
+  font-size: 13px;
+  color: #aaaaaa;
+  line-height: 1.5;
+}
