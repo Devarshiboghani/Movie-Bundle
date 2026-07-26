@@ -1,63 +1,211 @@
 .checkoutfaq-section {
+  width: 100%;
   background: #0d0d0d;
   color: #fff;
-  padding: 10px 0;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  padding: 60px 20px;
 }
 
 .checkoutfaq-container {
   width: 100%;
-  max-width: 760px;
+  max-width: 850px;
+  margin: auto;
 }
 
 .checkoutfaq-title {
-  font-size: 22px;
-  font-weight: bold;
-  text-align: left;
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 35px;
+  line-height: 1.3;
 }
 
 .checkoutfaq-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 16px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-  font-family: Hind Madurai, sans-serif;
+  gap: 18px;
 }
 
 .checkoutfaq-card {
-  border: 1px solid hsla(0, 0%, 100%, 0.15);
-  box-shadow: 0 0 6px 0 hsla(0, 0%, 100%, 0.35);
+  background: #151515;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
-  padding: 18px 20px;
+  padding: 20px 24px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.checkoutfaq-card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.checkoutfaq-card.active {
+  border-color: #3b82f6;
 }
 
 .checkoutfaq-question {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 15px;
-  font-weight: 500;
+  gap: 20px;
+}
+
+.checkoutfaq-question span:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .checkoutfaq-icon {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 700;
+  color: #3b82f6;
+  flex-shrink: 0;
 }
 
 .checkoutfaq-answer {
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px solid #777777;
-  font-size: 14px;
-  line-height: 1.5;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.checkoutfaq-answer p {
+  font-size: 16px;
+  color: #d8d8d8;
+  line-height: 1.8;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .checkoutfaq-container {
+    max-width: 780px;
+  }
+
+  .checkoutfaq-title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 992px) {
+  .checkoutfaq-section {
+    padding: 55px 18px;
+  }
+
+  .checkoutfaq-title {
+    font-size: 30px;
+  }
+
+  .checkoutfaq-card {
+    padding: 18px 20px;
+  }
+
+  .checkoutfaq-question span:first-child {
+    font-size: 17px;
+  }
+
+  .checkoutfaq-answer p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkoutfaq-section {
+    padding: 45px 16px;
+  }
+
+  .checkoutfaq-title {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  .checkoutfaq-list {
+    gap: 14px;
+  }
+
+  .checkoutfaq-card {
+    padding: 16px;
+  }
+
+  .checkoutfaq-question {
+    gap: 12px;
+  }
+
+  .checkoutfaq-question span:first-child {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .checkoutfaq-icon {
+    font-size: 24px;
+  }
+
+  .checkoutfaq-answer {
+    margin-top: 14px;
+    padding-top: 14px;
+  }
+
+  .checkoutfaq-answer p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 576px) {
+  .checkoutfaq-section {
+    padding: 40px 12px;
+  }
+
+  .checkoutfaq-title {
+    font-size: 22px;
+  }
+
+  .checkoutfaq-card {
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  .checkoutfaq-question span:first-child {
+    font-size: 15px;
+  }
+
+  .checkoutfaq-icon {
+    font-size: 22px;
+  }
+
+  .checkoutfaq-answer p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 380px) {
+  .checkoutfaq-section {
+    padding: 35px 10px;
+  }
+
+  .checkoutfaq-title {
+    font-size: 19px;
+  }
+
+  .checkoutfaq-card {
+    padding: 12px;
+  }
+
+  .checkoutfaq-question {
+    align-items: flex-start;
+  }
+
+  .checkoutfaq-question span:first-child {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .checkoutfaq-icon {
+    font-size: 20px;
+  }
+
+  .checkoutfaq-answer p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
 }

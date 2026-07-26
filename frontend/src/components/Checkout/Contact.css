@@ -1,104 +1,292 @@
 .contact-section {
-  background-color: #0d0d0d;
-  padding: 10px 0px;
-  color: #ffffff;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
+  background: #0d0d0d;
+  color: #fff;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 .contact-container {
   width: 100%;
-  max-width: 760px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  max-width: 850px;
+  margin: auto;
 }
 
 .contact-box {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 18px;
 }
 
 .contact-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 14px;
-  color: #cccccc;
+  gap: 14px;
+  font-size: 18px;
+  color: #d5d5d5;
+  word-break: break-word;
 }
 
 .contact-icon {
-  font-size: 16px;
+  font-size: 22px;
+  flex-shrink: 0;
 }
 
 .terms-box {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  margin-top: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 18px 22px;
+  background: #151515;
 }
 
 .terms-header {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   cursor: pointer;
 }
 
-.terms-toggle-icon,
+.terms-toggle-icon {
+  font-size: 26px;
+  color: #3b82f6;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
 .terms-title {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .terms-text {
-  font-size: 13px;
-  color: #aaaaaa;
+  margin-top: 15px;
+  color: #cfcfcf;
+  font-size: 16px;
+  line-height: 1.8;
 }
 
 .footer-divider {
   width: 100%;
   height: 1px;
-  background-color: #222222;
-  margin: 0px 0;
+  background: rgba(255, 255, 255, 0.12);
+  margin: 35px 0;
 }
 
 .superprofile-box {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 14px;
 }
 
 .superprofile-brand {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .superprofile-logo {
-  color: #0066ff;
-  font-size: 18px;
+  font-size: 28px;
+  color: #3b82f6;
 }
 
 .superprofile-name {
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-  letter-spacing: 0.5px;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .superprofile-text {
-  font-size: 13px;
-  color: #aaaaaa;
-  line-height: 1.5;
+  color: #c7c7c7;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+@media (max-width: 1200px) {
+  .contact-container {
+    max-width: 780px;
+  }
+
+  .contact-title {
+    font-size: 30px;
+  }
+
+  .superprofile-name {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-section {
+    padding: 50px 18px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+  }
+
+  .contact-item {
+    font-size: 17px;
+  }
+
+  .terms-title {
+    font-size: 20px;
+  }
+
+  .superprofile-name {
+    font-size: 24px;
+  }
+
+  .superprofile-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 45px 16px;
+  }
+
+  .contact-title {
+    font-size: 24px;
+  }
+
+  .contact-item {
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  .contact-icon {
+    font-size: 20px;
+  }
+
+  .terms-box {
+    padding: 16px;
+  }
+
+  .terms-title {
+    font-size: 18px;
+  }
+
+  .terms-toggle-icon {
+    font-size: 22px;
+  }
+
+  .terms-text {
+    font-size: 15px;
+  }
+
+  .footer-divider {
+    margin: 30px 0;
+  }
+
+  .superprofile-logo {
+    font-size: 24px;
+  }
+
+  .superprofile-name {
+    font-size: 22px;
+  }
+
+  .superprofile-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-section {
+    padding: 40px 14px;
+  }
+
+  .contact-title {
+    font-size: 22px;
+  }
+
+  .contact-item {
+    font-size: 14px;
+    align-items: flex-start;
+  }
+
+  .contact-icon {
+    font-size: 18px;
+    margin-top: 2px;
+  }
+
+  .terms-box {
+    padding: 14px;
+  }
+
+  .terms-title {
+    font-size: 17px;
+  }
+
+  .terms-toggle-icon {
+    font-size: 20px;
+  }
+
+  .terms-text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .superprofile-logo {
+    font-size: 22px;
+  }
+
+  .superprofile-name {
+    font-size: 20px;
+  }
+
+  .superprofile-text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact-section {
+    padding: 35px 10px;
+  }
+
+  .contact-title {
+    font-size: 20px;
+  }
+
+  .contact-item {
+    font-size: 13px;
+    gap: 8px;
+  }
+
+  .contact-icon {
+    font-size: 16px;
+  }
+
+  .terms-title {
+    font-size: 15px;
+  }
+
+  .terms-toggle-icon {
+    font-size: 18px;
+  }
+
+  .terms-text {
+    font-size: 13px;
+  }
+
+  .superprofile-name {
+    font-size: 18px;
+  }
+
+  .superprofile-logo {
+    font-size: 20px;
+  }
+
+  .superprofile-text {
+    font-size: 13px;
+  }
 }

@@ -349,44 +349,271 @@
   border-color: #ff4d4d !important;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
+  .checkout-container {
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
   .left-section {
-    padding-right: 25px;
+    max-width: 520px;
+    flex: 0 0 520px;
+    padding-right: 35px;
+  }
+
+  .bundle-image {
+    max-width: 520px;
+  }
+
+  .checkout-card {
+    max-width: 420px;
+    flex: 0 0 420px;
+  }
+}
+
+@media (max-width: 992px) {
+  .checkout-section {
+    padding: 40px 20px;
+  }
+
+  .checkout-container {
+    display: block;
+  }
+
+  .left-section {
+    max-width: 100%;
+    flex: unset;
+    padding-right: 0;
+    margin: auto;
     text-align: center;
     margin-bottom: 40px;
   }
 
+  .checkout-logo {
+    margin: auto auto 20px;
+    display: block;
+  }
+
   .bundle-image {
-    max-width: 500px;
-    margin: auto;
+    max-width: 600px;
+    width: 100%;
   }
 
   .checkout-card {
-    max-width: 100%;
-    margin-left: 0;
+    max-width: 650px;
+    flex: unset;
+    margin: auto;
+  }
+
+  .checkout-title {
+    font-size: 28px;
   }
 }
 
 @media (max-width: 768px) {
+  .checkout-section {
+    padding: 30px 15px;
+  }
+
   .checkout-title {
-    font-size: 28px;
+    font-size: 24px;
   }
 
-  .phone-box {
-    flex-direction: column;
+  .checkout-logo {
+    width: 55px;
   }
 
-  .country-code {
-    width: 100%;
+  .checkout-card {
+    padding: 18px;
+  }
+
+  .email-text {
+    font-size: 13px;
+  }
+
+  .checkout-input,
+  .phone-wrapper {
+    height: 48px;
+  }
+
+  .country-select {
+    font-size: 15px;
+  }
+
+  .phone-field {
+    font-size: 15px;
+  }
+
+  .phone-field::placeholder {
+    font-size: 14px;
   }
 
   .addon-box {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   .addon-img {
-    width: 100%;
+    width: 150px;
     height: auto;
+  }
+
+  .addon-box h4 {
+    font-size: 18px;
+  }
+
+  .blue p,
+  .blue strong {
+    font-size: 14px;
+  }
+
+  .add-order-btn {
+    width: 100%;
+  }
+
+  .buy-btn {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .checkout-section {
+    padding: 20px 10px;
+  }
+
+  .checkout-title {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .checkout-card {
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .checkout-logo {
+    width: 48px;
+  }
+
+  .email-text {
+    font-size: 12px;
+  }
+
+  .checkout-input,
+  .phone-wrapper {
+    height: 45px;
+  }
+
+  .country-select-wrapper {
+    width: 75px;
+  }
+
+  .country-select {
+    font-size: 14px;
+  }
+
+  .phone-field {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+
+  .addon-img {
+    width: 120px;
+  }
+
+  .addon-box h4 {
+    font-size: 16px;
+  }
+
+  .blue p {
+    font-size: 13px;
+  }
+
+  .blue strong {
+    font-size: 13px;
+  }
+
+  .blue h5 {
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .price-right del {
+    font-size: 12px;
+  }
+
+  .total-row .label,
+  .total-row .price {
+    font-size: 16px;
+  }
+
+  .buy-btn {
+    height: 48px;
+    font-size: 15px;
+  }
+
+  .buy-btn .arrow {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 400px) {
+  .checkout-title {
+    font-size: 18px;
+  }
+
+  .checkout-card {
+    padding: 12px;
+  }
+
+  .checkout-input,
+  .phone-wrapper {
+    height: 42px;
+  }
+
+  .country-select-wrapper {
+    width: 68px;
+  }
+
+  .country-select {
+    font-size: 13px;
+  }
+
+  .phone-field {
+    font-size: 13px;
+  }
+
+  .phone-field::placeholder {
+    font-size: 12px;
+  }
+
+  .addon-img {
+    width: 100px;
+  }
+
+  .addon-box h4 {
+    font-size: 15px;
+  }
+
+  .blue p,
+  .blue strong {
+    font-size: 12px;
+  }
+
+  .buy-btn {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .buy-btn .arrow {
+    font-size: 20px;
+  }
+
+  .price-row {
+    font-size: 13px;
   }
 }

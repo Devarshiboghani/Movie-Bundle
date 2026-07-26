@@ -16,6 +16,9 @@
 }
 
 .members-grid {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 320px);
   justify-content: center;

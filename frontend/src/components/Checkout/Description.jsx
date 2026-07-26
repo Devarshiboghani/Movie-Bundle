@@ -1,5 +1,5 @@
 import "./Description.css";
-import offerBanner from "../../assets/offerBanner.png"; // <-- apni image ka path
+import offerBanner from "../../assets/offerBanner.png"; 
 
 const Description = () => {
   return (
