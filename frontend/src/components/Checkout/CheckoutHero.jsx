@@ -7,16 +7,63 @@ import bundleImage2 from "../../assets/checkImage2.png";
 const CheckoutHero = () => {
   const [addOn, setAddOn] = useState(false);
 
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
+
   const basePrice = 149;
   const addOnPrice = 89;
 
   const total = addOn ? basePrice + addOnPrice : basePrice;
 
+  const handleEmailChange = (e) => {
+    const val = e.target.value;
+    setEmail(val);
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (val === "") {
+      setEmailError("Email is required");
+    } else if (!emailRegex.test(val)) {
+      setEmailError("Please enter a valid email address");
+    } else {
+      setEmailError("");
+    }
+  };
+
+  const handlePhoneChange = (e) => {
+    const val = e.target.value.replace(/\D/g, ""); // Only allow numbers
+    if (val.length <= 10) {
+      setPhone(val);
+      if (val === "") {
+        setPhoneError("Phone number is required");
+      } else if (val.length < 10) {
+        setPhoneError("Phone number must be 10 digits");
+      } else {
+        setPhoneError("");
+      }
+    }
+  };
+
+  const handleBuyNow = () => {
+    let isValid = true;
+    if (!email) {
+      setEmailError("Email is required");
+      isValid = false;
+    }
+    if (!phone || phone.length < 10) {
+      setPhoneError("Valid 10-digit phone number is required");
+      isValid = false;
+    }
+
+    if (isValid && !emailError && !phoneError) {
+      alert("Validation successful! Proceeding to payment...");
+    }
+  };
+
   return (
     <section className="checkout-section">
       <div className="container-fluid checkout-container">
         <div className="row align-items-center g-0">
-
           {/* LEFT SIDE */}
           <div className="col-lg-7 col-xl-7 d-flex justify-content-end">
             <div className="left-section">
@@ -41,11 +88,16 @@ const CheckoutHero = () => {
 
               <input
                 type="email"
-                className="form-control checkout-input"
+                className={`form-control checkout-input ${emailError ? "is-invalid" : ""}`}
                 placeholder="Email Address"
+                value={email}
+                onChange={handleEmailChange}
               />
+              {emailError && <span className="error-msg">{emailError}</span>}
 
-              <div className="phone-wrapper">
+              <div
+                className={`phone-wrapper ${phoneError ? "input-error-border" : ""}`}
+              >
                 <div className="country-select-wrapper">
                   <select className="country-select">
                     <option value="+91">+91</option>
@@ -60,8 +112,11 @@ const CheckoutHero = () => {
                   type="tel"
                   className="phone-field phone-input"
                   placeholder="Add your phone number *"
+                  value={phone}
+                  onChange={handlePhoneChange}
                 />
               </div>
+              {phoneError && <span className="error-msg">{phoneError}</span>}
 
               <div className="blue">
                 <div className="addon-box">
@@ -114,7 +169,7 @@ const CheckoutHero = () => {
                 </div>
               </div>
 
-              <button className="buy-btn">
+              <button className="buy-btn" onClick={handleBuyNow}>
                 <span>Buy Now</span>
                 <span className="arrow">→</span>
               </button>

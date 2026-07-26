@@ -98,7 +98,7 @@
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .country-select-wrapper {
@@ -311,6 +311,7 @@
   width: 100%;
   height: 45px;
   margin-top: 15px;
+  padding: 15px;
   background: #2f6cf6;
   border: none;
   border-radius: 10px;
@@ -330,6 +331,22 @@
 .buy-btn .arrow {
   font-size: 26px;
   font-weight: 300;
+}
+
+.error-msg {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 500;
+}
+
+.checkout-input.is-invalid {
+  border-color: #ff4d4d !important;
+}
+
+.input-error-border {
+  border-color: #ff4d4d !important;
 }
 
 @media (max-width: 992px) {
